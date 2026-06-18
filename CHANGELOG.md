@@ -4,6 +4,11 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/), y este proyecto se adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- **Jerarquía y Layout del Footer**: Rediseño del pie de página a un layout de columna centrada. Se actualizó el texto de copyright a "Desarrollado por Valentín Gelsomino" con mayor peso visual y se reubicaron los enlaces sociales (GitHub, LinkedIn y Web) justo debajo del crédito de autor para una mejor jerarquía visual.
+
 ## [1.0.0] - 2026-06-18
 
 ### Added

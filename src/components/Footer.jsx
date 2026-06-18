@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Globe } from 'lucide-react';
+import { Github, Globe, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -22,6 +22,10 @@ const Footer = () => {
         <a href="https://github.com/ValentinGelso/" target="_blank" rel="noopener noreferrer" className="social-link">
           <Github size={16} />
           <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/valentingelsomino93" target="_blank" rel="noopener noreferrer" className="social-link">
+          <Linkedin size={16} />
+          <span>LinkedIn</span>
         </a>
         <a href="https://www.vgelsomino.com.ar" target="_blank" rel="noopener noreferrer" className="social-link">
           <Globe size={16} />
