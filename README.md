@@ -1,57 +1,52 @@
 # Calculador de CUIL/CUIT
 
-Una aplicación web rápida, segura y estéticamente atractiva para calcular el Código Único de Identificación Laboral (CUIL) y la Clave Única de Identificación Tributaria (CUIT) de Argentina.
+Calculadora web para obtener el Código Único de Identificación Laboral (CUIL) y la Clave Única de Identificación Tributaria (CUIT) de Argentina a partir del DNI.
 
 ## Características
 
-- **Cálculo Local y Seguro:** Todo el procesamiento del algoritmo se realiza del lado del cliente, garantizando total privacidad de los datos ingresados.
-- **Soporte de Múltiples Variantes:** Genera automáticamente prefijos tradicionales (20/27) y el prefijo sin asignación de género (23), recomendando la opción óptima para evitar conflictos.
-- **Portapapeles Ágil:** Copiado del resultado con 1 clic para un flujo de trabajo fluido.
-- **Arquitectura Escalable:** Totalmente componentizado siguiendo patrones de diseño y mejores prácticas en React.
+- **Cálculo local:** Todo el cálculo del dígito verificador se realiza en el frontend (navegador), garantizando que los números de DNI no viajen a ningún servidor.
+- **Múltiples prefijos:** Soporta la generación del CUIL con los prefijos tradicionales (20 y 27) y el automático/sin género (23).
+- **Copiar al portapapeles:** Permite copiar el resultado rápidamente con un clic.
+- **Variantes:** Muestra todas las variantes posibles de CUIL para un mismo DNI.
 
 ## Stack Tecnológico
 
-- **React 18** (Librería UI)
-- **Vite** (Empaquetador y entorno de desarrollo)
-- **Framer Motion** (Animaciones y micro-interacciones)
-- **Lucide React** (Iconografía limpia y minimalista)
-- **Vanilla CSS** (Sistema de diseño usando variables nativas CSS)
+- **React 18**
+- **Vite**
+- **Framer Motion** (Animaciones de UI)
+- **Lucide React** (Iconos)
+- **CSS Vanilla** (Estilos globales y diseño *glassmorphism*)
 
 ## Estructura del Proyecto
 
-El código fuente está rigurosamente organizado por responsabilidades:
-
 ```text
 src/
-├── components/       # Componentes modulares y reutilizables
+├── components/       
 │   ├── Header.jsx
-│   ├── CuilForm.jsx  # Gestión del formulario y validaciones
-│   ├── ResultBox.jsx # Despliegue dinámico del CUIL principal
-│   ├── Variants.jsx  # Lista expandible de variantes
+│   ├── CuilForm.jsx  # Formulario y validación
+│   ├── ResultBox.jsx # Tarjeta de resultado
+│   ├── Variants.jsx  # Lista de prefijos alternativos
 │   └── Footer.jsx
 ├── lib/
-│   └── cuil.js       # Utilidades puras: Algoritmo de cálculo del módulo 11
-├── App.jsx           # Contenedor padre, control de estado y orquestación
-├── main.jsx          # Punto de entrada (React Root)
-└── index.css         # Tokens de diseño y estilos globales Glassmorphism
+│   └── cuil.js       # Lógica matemática del módulo 11
+├── App.jsx           # Componente principal
+├── main.jsx          # Punto de entrada de React
+└── index.css         # Estilos globales y variables CSS
 ```
 
-## Ejecución Local
+## Desarrollo Local
 
-Para correr el proyecto en tu entorno local:
+Pasos para correr el proyecto en tu computadora:
 
-1. Clona el repositorio:
+1. Clonar el repositorio:
    ```bash
-   git clone <URL-DEL-REPOSITORIO>
+   git clone https://github.com/ValentinGelso/dni-to-cuil.git
    ```
-2. Instala las dependencias:
+2. Instalar dependencias:
    ```bash
    npm install
    ```
-3. Inicia el servidor de desarrollo:
+3. Iniciar el servidor local:
    ```bash
    npm run dev
    ```
-
-## Enfoque de Diseño
-Se diseñó una interfaz *Premium* basada en **Glassmorphism**, fusionando un tema oscuro elegante con acentos institucionales dorados. El uso de desenfoques de fondo (backdrop filters) y animaciones de entrada logran una experiencia de usuario altamente responsiva y moderna.
