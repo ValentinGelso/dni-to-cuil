@@ -4,17 +4,18 @@ Todos los cambios notables de este proyecto serán documentados en este archivo.
 
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/), y este proyecto se adhiere a [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.0.0] - 2026-06-18
 
 ### Added
-- **Arquitectura Modular**: Separación de responsabilidades de la UI principal (`App.jsx`) extrayéndola en múltiples componentes independientes (`Header.jsx`, `CuilForm.jsx`, `ResultBox.jsx`, `Variants.jsx`, `Footer.jsx`).
-- **Enlaces Sociales**: Integración de iconos oficiales (`lucide-react`) para GitHub y página web personal en el pie de página, incluyendo estilos CSS `.social-link` con micro-interacciones visuales.
-- **Documentación Técnica**: Inclusión de un `README.md` riguroso detallando el algoritmo de ejecución local, la arquitectura orientada a componentes, el stack tecnológico y las instrucciones de setup del proyecto.
-- **Control de Versiones**: Agregado de un archivo `.gitignore` estandarizado para entornos de Node/React/Vite (garantizando la exclusión segura de carpetas como `node_modules` y `dist`).
+- **Arquitectura de Componentes**: Separación lógica de la vista principal (`App.jsx`) en componentes funcionales individuales (`Header`, `CuilForm`, `ResultBox`, `Variants`, `Footer`).
+- **Navegación Social**: Se agregaron enlaces al perfil de GitHub y portfolio personal en el pie de página, utilizando iconos de `lucide-react` con estilos de hover unificados.
+- **Documentación**: Nuevo archivo `README.md` con instrucciones de instalación, uso local y detalle del stack tecnológico.
+- **Git**: Se incluyó el archivo `.gitignore` estándar para proyectos React/Vite.
 
 ### Changed
-- **Re-Branding de la Aplicación**: Actualización de la firma y metadatos del proyecto. Se removió la insignia visual "Barroco Deco apps", se limpió la etiqueta `<title>` del archivo base `index.html`, y se actualizó el copyright del pie de página a nombre del desarrollador (Valentín Gelsomino).
-- **Refactorización (Clean Code)**: Purga profunda de comentarios innecesarios, anotaciones y separadores a lo largo de todos los archivos del árbol de código (`JSX`, `CSS`, y `JS`), estandarizando el proyecto bajo convenciones de código limpio y profesional.
+- **Branding y Metadatos**: Se actualizaron los títulos en `index.html` y los textos del pie de página para reflejar la autoría directa (Valentín Gelsomino).
+- **Refactor de Código**: Limpieza general del código base, eliminando comentarios de prototipado y aplicando buenas prácticas de legibilidad en componentes y estilos.
+- **UI/UX del Footer**: Se reemplazó el diseño apilado del pie de página por un layout horizontal con flexbox para mejorar la distribución visual.
 
 ### Removed
-- **Archivos Obsoletos**: Eliminación de copias de seguridad residuales y archivos estáticos no utilizados (como `index.html.bak`).
+- Eliminación de archivos temporales y de backup generados durante el desarrollo inicial (`index.html.bak`).
