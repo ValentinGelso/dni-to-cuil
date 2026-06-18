@@ -8,15 +8,14 @@ const Footer = () => {
       paddingTop: '24px', 
       borderTop: '1px solid var(--glass-border)',
       display: 'flex', 
-      flexWrap: 'wrap',
-      justifyContent: 'space-between', 
+      flexDirection: 'column',
       alignItems: 'center',
-      gap: '16px',
+      gap: '12px',
       fontSize: '0.85rem', 
       color: 'var(--text-dim)' 
     }}>
-      <p style={{ margin: 0 }}>
-        © {new Date().getFullYear()} Valentín Gelsomino
+      <p style={{ margin: 0, fontWeight: 500, color: 'var(--text-muted)' }}>
+        © {new Date().getFullYear()} Desarrollado por Valentín Gelsomino
       </p>
       
       <div style={{ display: 'flex', gap: '20px' }}>
